@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f7f7f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,24 +24,59 @@ body {
 }
 
 .card {
-    background-color: #e4c64f;
-    border-radius: 8px;
-    padding: 20px;
+    background-color: #f2f1ed;
+    border-radius: 4px;
+    padding: 16px;
     width: 320px;
     flex-shrink: 0;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-action {
+    margin-top: auto;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #26251E;
 }
 
 .card-title {
-    font-size: 32px;
-    font-weight: 600;
-    color: #333;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #26251E;
     margin-bottom: 8px;
+}
+
+.card-price,
+.card-price-amount,
+.card-price-period {
+    color: rgba(38, 37, 30, 0.5);
+    font-weight: 400;
 }
 
 .card-price {
     font-size: 20px;
-    color: #666;
-    margin-bottom: 24px;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.card-price-amount {
+    font-size: 22px;
+}
+
+.card-price-period {
+    font-size: 14px;
 }
 
 .card-content {
@@ -50,8 +85,8 @@ body {
 
 .includes-text {
     font-size: 16px;
-    color: #333;
-    margin-bottom: 16px;
+    color: rgba(38, 37, 30, 0.5);   
+    margin: 16px 0px;
 }
 
 .features-list {
@@ -62,20 +97,21 @@ body {
 .features-list li {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
-    font-size: 15px;
-    color: #333;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #26251E; 
 }
 
 .checkmark {
-    color: #4a4a4a;
-    font-size: 18px;
-    margin-right: 12px;
-    font-weight: bold;
+    color: #26251E; 
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: regular;
 }
 
 .download-button {
     width: fit-content;
+    margin-top: auto;
     background-color: #e6e5e0;
     border: none;
     border-radius: 999px;
